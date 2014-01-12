@@ -22,10 +22,10 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>thymeleafexamples</groupId>
-  <artifactId>tilestest</artifactId>
+  <groupId>thymeleafsandbox</groupId>
+  <artifactId>springjsp</artifactId>
   <packaging>war</packaging>
-  <version>20121115</version>
+  <version>ci</version>
   <name>Thymeleaf Examples - Thymeleaf+Tiles test</name>
 
   <description>XML/XHTML/HTML5 template engine for Java</description>
@@ -44,9 +44,9 @@
   </organization>
   
   <scm>
-    <url>scm:git:git@github.com:thymeleaf/thymeleafexamples-tilestest.git</url>
-    <connection>scm:git:git@github.com:thymeleaf/thymeleafexamples-tilestest.git</connection>
-    <developerConnection>scm:git:git@github.com:thymeleaf/thymeleafexamples-tilestest.git</developerConnection>
+    <url>scm:git:git@github.com:thymeleaf/thymeleafsandbox-springtiles.git</url>
+    <connection>scm:git:git@github.com:thymeleaf/thymeleafsandbox-springtiles.git</connection>
+    <developerConnection>scm:git:git@github.com:thymeleaf/thymeleafsandbox-springtiles.git</developerConnection>
   </scm>
   
   <developers>
