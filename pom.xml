@@ -23,7 +23,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>thymeleafsandbox</groupId>
-  <artifactId>springjsp</artifactId>
+  <artifactId>springtiles</artifactId>
   <packaging>war</packaging>
   <version>ci</version>
   <name>Thymeleaf Examples - Thymeleaf+Tiles test</name>
