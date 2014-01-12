@@ -1,10 +1,6 @@
-
- Thymeleaf Examples: Thymeleaf + Tiles
- -------------------------------------
+ Thymeleaf Sandbox: Spring + Tiles
+ ---------------------------------
  
- To learn more and download latest version:
- 
-     http://www.thymeleaf.org
+ This is a sandbox application, only used internally for development.
 
-
-     
+ **Thymeleaf users should just ignore this repository**.
