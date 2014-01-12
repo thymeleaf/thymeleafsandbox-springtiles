@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+	
+<tiles-definitions>
+
+    
+  <definition name="flow.tiles" template="flow">
+    <put-attribute name="tobechanged" value="flow_internal"/>
+  </definition>
+    
+    
+  <definition name="thymeleafWildcard.tiles*" template="thA">
+    <put-attribute name="attr-b" value="th{1}"/>
+    <put-attribute name="attr-d" value="{1}" type="string" />
+  </definition>
+  
+  <definition name="something*" template="thB">
+    <put-attribute name="attr-c" value="{1}" type="string"/>
+  </definition>
+  
+  <definition name="jspWildcard.tiles*" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="{1}" type="string"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="{1}" type="string" />
+  </definition>
+  
+  <definition name="something*" template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+    <put-attribute name="attr-c" value="{1}" type="string"/>
+  </definition>
+  
+  <definition name="thymeleaf1.tiles" template="thA :: [//body]">
+    <put-attribute name="attr-b">
+        <definition template="thB">
+          <put-attribute name="attr-c" value="${'thC'}" type="string" />
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="thD" />
+  </definition>
+    
+  <definition name="thymeleaf2.tiles" template="thA">
+    <put-attribute name="attr-b">
+        <definition template="thB">
+          <put-attribute name="attr-c" value="thC" />
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="/WEB-INF/templates/jspD.jsp" type="jsp"/>
+  </definition>
+      
+  <definition name="thymeleaf3.tiles" template="thA">
+    <put-attribute name="attr-b">
+        <definition template="thB">
+          <put-attribute name="attr-c" value="/WEB-INF/templates/jspC.jsp" type="jsp"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="thD" />
+  </definition>
+      
+  <definition name="thymeleaf4.tiles" template="thA">
+    <put-attribute name="attr-b">
+        <definition template="thB">
+          <put-attribute name="attr-c" value="/WEB-INF/templates/jspC.jsp" type="jsp"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="/WEB-INF/templates/jspD.jsp" type="jsp"/>
+  </definition>
+    
+  <definition name="thymeleaf5.tiles" template="thA">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="thC" />
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="thD" />
+  </definition>
+    
+  <definition name="thymeleaf6.tiles" template="thA">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="thC" />
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="/WEB-INF/templates/jspD.jsp" type="jsp"/>
+  </definition>
+      
+  <definition name="thymeleaf7.tiles" template="thA">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="/WEB-INF/templates/jspC.jsp" type="jsp"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="thD" />
+  </definition>
+      
+  <definition name="thymeleaf8.tiles" template="thA">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="/WEB-INF/templates/jspC.jsp" type="jsp"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="/WEB-INF/templates/jspD.jsp" type="jsp"/>
+  </definition>
+  
+
+  
+  
+  
+  <definition name="jsp1.tiles" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="/WEB-INF/templates/jspC.jsp" type="jsp"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="/WEB-INF/templates/jspD.jsp" type="jsp"/>
+  </definition>
+  
+  <definition name="jsp2.tiles" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="/WEB-INF/templates/jspC.jsp" type="jsp"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="thD"/>
+  </definition>
+    
+  <definition name="jsp3.tiles" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="thC" />
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="/WEB-INF/templates/jspD.jsp" type="jsp"/>
+  </definition>
+    
+  <definition name="jsp4.tiles" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="/WEB-INF/templates/jspB.jsp" templateType="jsp">
+          <put-attribute name="attr-c" value="thC" />
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="thD"/>
+  </definition>
+  
+  <definition name="jsp5.tiles" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="thB">
+          <put-attribute name="attr-c" value="/WEB-INF/templates/jspC.jsp" type="jsp"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="/WEB-INF/templates/jspD.jsp" type="jsp"/>
+  </definition>
+  
+  <definition name="jsp6.tiles" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="thB">
+          <put-attribute name="attr-c" value="/WEB-INF/templates/jspC.jsp" type="jsp"/>
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="thD"/>
+  </definition>
+    
+  <definition name="jsp7.tiles" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="thB">
+          <put-attribute name="attr-c" value="thC" />
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="/WEB-INF/templates/jspD.jsp" type="jsp"/>
+  </definition>
+    
+  <definition name="jsp8.tiles" template="/WEB-INF/templates/jspA.jsp" templateType="jsp">
+    <put-attribute name="attr-b">
+        <definition template="thB">
+          <put-attribute name="attr-c" value="thC" />
+        </definition>
+    </put-attribute>
+    <put-attribute name="attr-d" value="thD"/>
+  </definition>
+  
+  
+</tiles-definitions>

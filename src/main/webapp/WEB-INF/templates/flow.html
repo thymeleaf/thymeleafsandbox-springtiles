@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Spring WebFlow + Apache Tiles</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" th:src="@{/resources/dojo/dojo.js}"></script>
+    <script type="text/javascript" th:src="@{/resources/spring/Spring.js}"></script>
+    <script type="text/javascript" th:src="@{/resources/spring/Spring-Dojo.js}"></script>
+  </head>
+
+  <body>
+
+    <h2>Page for testing Apache Tiles with Spring WebFlow</h2>
+    
+    <div tiles:replace="tobechanged"></div>
+
+    <form id="testform" method="post" action="">
+      <input type="submit" id="changeSubmit" name="_eventId_forward" value="Change the text" />
+    </form>
+   
+    <script type="text/javascript">
+        Spring.addDecoration(new Spring.AjaxEventDecoration({elementId:'changeSubmit',event:'onclick',formId:'testform'}));
+    </script>
+
+  </body>
+  
+</html>

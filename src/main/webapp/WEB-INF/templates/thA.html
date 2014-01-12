@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
+
+  <head>
+  </head>
+
+  <body>
+
+    <ul>
+      <li>thA, var0 = <span th:text="${var0}"></span></li>
+    </ul>
+    
+    <div th:with="varA='[VAR A]'">
+    
+        <div tiles:replace="attr-b"></div>
+        
+        <div tiles:include="attr-d"></div>
+        
+    </div>
+    
+    <div>
+      THYMELEAF:
+      <a th:href="@{/thymeleaf1}">THYMELEAF1</a> |
+      <a th:href="@{/thymeleaf2}">THYMELEAF2</a> |
+      <a th:href="@{/thymeleaf3}">THYMELEAF3</a> |
+      <a th:href="@{/thymeleaf4}">THYMELEAF4</a> |
+      <a th:href="@{/thymeleaf5}">THYMELEAF5</a> |
+      <a th:href="@{/thymeleaf6}">THYMELEAF6</a> |
+      <a th:href="@{/thymeleaf7}">THYMELEAF7</a> |
+      <a th:href="@{/thymeleaf8}">THYMELEAF8</a>
+    </div>
+    <div>
+      JSP:
+      <a th:href="@{/jsp1}">JSP1</a> |
+      <a th:href="@{/jsp2}">JSP2</a> |
+      <a th:href="@{/jsp3}">JSP3</a> |
+      <a th:href="@{/jsp4}">JSP4</a> |
+      <a th:href="@{/jsp5}">JSP5</a> |
+      <a th:href="@{/jsp6}">JSP6</a> |
+      <a th:href="@{/jsp7}">JSP7</a> |
+      <a th:href="@{/jsp8}">JSP8</a>
+    </div>
+
+  </body>
+  
+</html>
